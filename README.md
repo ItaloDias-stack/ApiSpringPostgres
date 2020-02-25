@@ -1,3 +1,3 @@
 # API
 
-Api feita em Spring para a conexão de outras aplicaçãoes com um banco de dados Postgres.
+API feita em Spring para a conexão de uma aplicaçãao Flutter com um banco de dados Postgres.
