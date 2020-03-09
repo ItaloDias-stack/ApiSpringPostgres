@@ -12,7 +12,7 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long idUsuario;
 	
-	private String nomeUser,username,senha;
+	private String nome,username,senha;
 
 	public long getIdUsuario() {
 		return idUsuario;
@@ -22,12 +22,12 @@ public class Usuario {
 		this.idUsuario = idUsuario;
 	}
 
-	public String getNomeUser() {
-		return nomeUser;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomeUser(String nomeUser) {
-		this.nomeUser = nomeUser;
+	public void setNome(String nomeUser) {
+		this.nome = nomeUser;
 	}
 
 	public String getUsername() {
@@ -46,5 +46,8 @@ public class Usuario {
 		this.senha = senha;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Id: "+getIdUsuario()+" Username: "+getUsername()+" Nome: "+getNome()+" Senha: "+getSenha();
+	}
 }

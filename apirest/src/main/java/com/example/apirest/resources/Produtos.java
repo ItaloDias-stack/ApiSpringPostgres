@@ -63,7 +63,7 @@ public class Produtos {
 	}
 
 	@PutMapping("/updateProduto/{id}")
-	public ResponseEntity<Produto> updateProduto(@PathVariable(value = "id") long id, @RequestBody Produto p) {
+	public ResponseEntity<Produto> updateProduto(@PathVariable(value = "id") long id,@RequestBody Produto p) {
 
 		Produto produto = produtoRepository.findById(id);
 
